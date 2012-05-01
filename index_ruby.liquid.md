@@ -249,5 +249,75 @@ __[P28]({{ "28" | ruby }}) (**) Sorting a list of lists according to length of s
 
 {{ "28" | ruby_solution }}
 
+## Arithmetic
+
+__[P31]({{ "31" | ruby }}) (**) Determine whether a given integer number is prime.__
+> Example:
+    > prime?(7)
+    => true
+
+{{ "31" | ruby_solution }}
+
+__[P32]({{ "32" | ruby }}) (**) Determine the greatest common divisor of two positive integer numbers.__
+> Use Euclid's algorithm.
+
+> Example:
+    > gcd(36, 63)
+    => 9
+
+{{ "32" | ruby_solution }}
+
+__[P33]({{ "33" | ruby }}) (*) Determine whether two positive integer numbers are coprime.__
+> Two numbers are coprime if their greatest common divisor equals 1.
+
+> Example:
+    > coprime(35, 64)
+    => true
+
+{{ "33" | ruby_solution }}
+
+__[P34]({{ "34" | ruby }}) (**) Calculate Euler's totient function phi(m).__
+> Euler's so-called totient function `phi(m)` is defined as the number of positive integers _r_ (1 <= _r_ <= _m_) that are coprime to _m_.
+
+> Example:
+    > totient(10)
+    => 4
+
+{{ "34" | ruby_solution }}
+
+__[P35]({{ "35" | ruby }}) (**) Determine the prime factors of a given positive integer.__
+> Construct a flat list containing the prime factors in ascending order.
+
+> Example:
+    > prime_factors(315)
+    => [3, 3, 5, 7]
+
+{{ "35" | ruby_solution }}
+
+__[P36]({{ "36" | ruby }}) (**) Determine the prime factors of a given positive integer (2).__
+> Construct a list containing the prime factors and their multiplicity.
+
+> Example:
+    > prime_factors_multiplicity(315)
+    => [[3, 2], [5, 1], [7, 1]]
+
+{{ "36" | ruby_solution }}
+
+__[P37]({{ "37" | ruby }}) (**) Calculate Euler's totient function phi(m) (improved).__
+> See problem [P34]() for the definition of Euler's totient function. If the list of the prime factors of a number _m_ is known in the form of problem [P36]() then the function `phi(m)` can be efficiently calculated as follows: Let [[_p1_, _m1_], [_p2_, _m2_], [_p3_, _m3_], ...] be the list of prime factors (and their multiplicities) of a given number _m_. Then `phi(m)` can be calculated with the following formula:
+
+> _phi_(_m_) = (_p1_- 1) * _p1_^(_m1_-1) * (_p2_-1) * _p2_^(_m2_-1) * (_p3_-1) * _p3_^(_m3_-1) * ...
+
+> Note that _a_^_b_ stands for the bth power of _a_.
+
+{{ "37" | ruby_solution }}
+
+__[P38]({{ "38" | ruby }}) (*) Compare the two methods of calculating Euler's totient function.__
+> Use the solutions of problems [P34]() and [P37]() to compare the algorithms. Try to calculate `phi(10090)` as an example.
+
+{{ "38" | ruby_solution }}
+
+
+
 
 

@@ -144,6 +144,69 @@ class Test99 < Test::Unit::TestCase
             }],
             
 =end
+            
+            :P31 => ["prime?", {
+                [-1] => false,
+                [0] => false,
+                [1] => false,
+                [2] => true,
+                [3] => true,
+                [4] => false,
+                [5] => true,
+                [6] => false,
+                [7] => true,
+                [8] => false,
+                [9] => false,
+                [9721] => true,
+                [9723] => false,
+                
+            }],
+            
+            :P32 => ["gcd", {
+                [1, 0] => 1,
+                [0, 1] => 1,
+                [36, 63] => 9,
+                [18997050, 19445295] => 21345,
+                
+            }],
+            
+            :P33 => ["coprime", {
+                [35, 64] => true,
+                [1037, 915] => false,
+                
+            }],
+            
+            :P34 => ["totient", {
+                [10] => 4,
+                [72] => 24,
+                [10090] => 4032,
+                
+            }],
+            
+            :P35 => ["prime_factors", {
+                [315] => [3, 3, 5, 7],
+                
+            }],
+            
+            :P36 => ["prime_factors_multiplicity", {
+                [315] => [[3, 2], [5, 1], [7, 1]],
+                
+            }],
+            
+            :P37 => ["totient_improved", {
+                [10] => 4,
+                [72] => 24,
+                [10090] => 4032,
+                
+            }],
+            
+            :P38 => ["totient_comparison", {
+                [10] => true,
+                [72] => true,
+                [10090] => true,
+                
+            }],
+            
         }.each do |k, v|
             v[1].each do |i, o|
                 if i.length == 1

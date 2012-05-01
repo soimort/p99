@@ -43,6 +43,15 @@ Feedback is very appreciated (especially if you find a solution is incorrect). Y
     [[27](https://github.com/soimort/p99/blob/master/ruby/27.rb)]
     [[28](https://github.com/soimort/p99/blob/master/ruby/28.rb)]
 2. Arithmetic (Problems 31 ~ 41)
+    * Solutions in __Ruby__:
+    [[31](https://github.com/soimort/p99/blob/master/ruby/31.rb)]
+    [[32](https://github.com/soimort/p99/blob/master/ruby/32.rb)]
+    [[33](https://github.com/soimort/p99/blob/master/ruby/33.rb)]
+    [[34](https://github.com/soimort/p99/blob/master/ruby/34.rb)]
+    [[35](https://github.com/soimort/p99/blob/master/ruby/35.rb)]
+    [[36](https://github.com/soimort/p99/blob/master/ruby/36.rb)]
+    [[37](https://github.com/soimort/p99/blob/master/ruby/37.rb)]
+    [[38](https://github.com/soimort/p99/blob/master/ruby/38.rb)]
 3. Logic and codes (Problems 46 ~ 50)
 4. Binary trees (Problems 54A ~ 69)
 5. Multiway trees (Problems 70B ~ 73)
