@@ -358,3 +358,76 @@ __[P41]({{ "41" | ruby}}) (**) A list of Goldbach compositions.__
 
 {{ "41" | ruby_solution }}
 
+## Logic and Codes
+
+__[P46]({{ "46" | ruby}}) (**) Truth tables for logical expressions.__
+> Define functions `and2`, `or2`, `nand`, `nor`, `xor`, `impl`, and `equ` (for logical equivalence) which return true or false according to the result of their respective operations; e.g. `and2(A, B)` is true if and only if both _A_ and _B_ are true.
+
+> Example:
+    > and2(true, true)
+    => true
+    > xor(true, true)
+    => false
+
+> A logical expression in two variables can then be written as an function of two variables, e.g: `and(or(a, b), nand(a, b))`
+
+> Now, write a function called `table2` which prints the truth table of a given logical expression in two variables.
+
+> Example:
+    > table2(lambda{ |a, b| and2.call(a, or2.call(a, b)) })
+    A     B     result
+    true  true  true
+    true  false true
+    false true  false
+    false false false
+
+{{ "46" | ruby_solution }}
+
+__[P47]({{ "47" | ruby}}) (*) Truth tables for logical expressions (2).__
+
+> Omitted for now.
+
+__[P48]({{ "48" | ruby}}) (**) Truth tables for logical expressions (3).__
+> Generalize problem [P46]() in such a way that the logical expression may contain any number of logical variables.
+
+> Example:
+    > table(3, lambda{ |par| (par[0] && (par[1] || par[2])) == (par[0] && par[1] || par[0] && par[2]) })
+    true	true	true	true
+    true	true	false	true
+    true	false	true	true
+    true	false	false	true
+    false	true	true	true
+    false	true	false	true
+    false	false	true	true
+    false	false	false	true
+
+{{ "48" | ruby_solution }}
+
+__[P49]({{ "49" | ruby}}) (**) Gray code.__
+> An _n_-bit Gray code is a sequence of _n_-bit strings constructed according to certain rules. For example,
+
+> n = 1: C(1) = ("0", "1").
+
+> n = 2: C(2) = ("00", "01", "11", "10").
+
+> n = 3: C(3) = ("000", "001", "011", "010", "110", "111", "101", "100").
+
+> Find out the construction rules and write a function to generate Gray codes.
+
+> Example:
+    > gray(3)
+    => ["000", "001", "011", "010", "110", "111", "101", "100"]
+
+{{ "49" | ruby_solution }}
+
+__[P50]({{ "50" | ruby}}) (***) Huffman code.__
+> First of all, consult a good book on discrete mathematics or algorithms for a detailed description of Huffman codes!
+
+> We suppose a set of symbols with their frequencies, given as a list of `[S, F]` tuples. E.g. `[["a", 45], ["b", 13], ["c", 12], ["d", 16], ["e", 9], ["f", 5]]`. Our objective is to construct a list of `[S, C]` tuples, where _C_ is the Huffman code word for the symbol _S_.
+
+> Example:
+    > huffman([["a", 45], ["b", 13], ["c", 12], ["d", 16], ["e", 9], ["f", 5]])
+    => [["a", "0"], ["c", "100"], ["b", "101"], ["f", "1100"], ["e", "1101"], ["d", "111"]]
+
+{{ "50" | ruby_solution }}
+
