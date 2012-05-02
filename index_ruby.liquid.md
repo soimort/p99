@@ -317,7 +317,44 @@ __[P38]({{ "38" | ruby }}) (*) Compare the two methods of calculating Euler's to
 
 {{ "38" | ruby_solution }}
 
+__[P39]({{ "39" | ruby}}) (*) A list of prime numbers.__
+> Given a range of integers by its lower and upper limit, construct a list of all prime numbers in that range.
 
+> Example:
+    > list_primes_in_range(7, 31)
+    => [7, 11, 13, 17, 19, 23, 29, 31]
 
+{{ "39" | ruby_solution }}
 
+__[P40]({{ "40" | ruby}}) (**) Goldbach's conjecture.__
+> Goldbach's conjecture says that every positive even number greater than 2 is the sum of two prime numbers. E.g. 28 = 5 + 23. It is one of the most famous facts in number theory that has not been proved to be correct in the general case. It has been _numerically_ confirmed up to very large numbers. Write a function to find the two prime numbers that sum up to a given even integer.
+
+> Example:
+    > goldbach(28)
+    => [5, 23]
+
+{{ "40" | ruby_solution }}
+
+__[P41]({{ "41" | ruby}}) (**) A list of Goldbach compositions.__
+> Given a range of integers by its lower and upper limit, print a list of all even numbers and their Goldbach composition.
+
+> Example:
+    > print_goldbach_list(9, 20)
+    10 = 3 + 7
+    12 = 5 + 7
+    14 = 3 + 11
+    16 = 3 + 13
+    18 = 5 + 13
+    20 = 3 + 17
+
+> In most cases, if an even number is written as the sum of two prime numbers, one of them is very small. Very rarely, the primes are both bigger than, say, 50. Try to find out how many such cases there are in the range 2..3000.
+
+> Example (minimum value of 50 for the primes):
+    > print_goldbach_list_limited(1, 2000, 50)
+    992 = 73 + 919
+    1382 = 61 + 1321
+    1856 = 67 + 1789
+    1928 = 61 + 1867
+
+{{ "41" | ruby_solution }}
 

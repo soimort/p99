@@ -52,6 +52,9 @@ Feedback is very appreciated (especially if you find a solution is incorrect). Y
     [[36](https://github.com/soimort/p99/blob/master/ruby/36.rb)]
     [[37](https://github.com/soimort/p99/blob/master/ruby/37.rb)]
     [[38](https://github.com/soimort/p99/blob/master/ruby/38.rb)]
+    [[39](https://github.com/soimort/p99/blob/master/ruby/39.rb)]
+    [[40](https://github.com/soimort/p99/blob/master/ruby/40.rb)]
+    [[41](https://github.com/soimort/p99/blob/master/ruby/41.rb)]
 3. Logic and codes (Problems 46 ~ 50)
 4. Binary trees (Problems 54A ~ 69)
 5. Multiway trees (Problems 70B ~ 73)

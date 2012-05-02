@@ -207,6 +207,16 @@ class Test99 < Test::Unit::TestCase
                 
             }],
             
+            :P39 => ["list_primes_in_range", {
+                [7, 31] => [7, 11, 13, 17, 19, 23, 29, 31],
+                
+            }],
+            
+            :P40 => ["goldbach", {
+                [28] => [5, 23],
+                
+            }],
+            
         }.each do |k, v|
             v[1].each do |i, o|
                 if i.length == 1
