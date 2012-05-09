@@ -8,7 +8,7 @@ class BinaryTree
 end
 
 def huffman(list)
-    trees = list.collect { |elem| BinaryTree.new(elem)}
+    trees = list.collect { |elem| BinaryTree.new(elem) }
     
     while trees.length > 1 do
         m1 = trees.min_by { |tree| tree.root[1] }
